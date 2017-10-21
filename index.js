@@ -12,6 +12,6 @@ const GithubAuthHandler = github_auth.GithubAuthHandler
     winston.debug(`Access token "${autherizationCode}"`)
     await authHandler.close()
   } catch (e) {
-    console.error(e)
+    winston.error(e)
   }
 })()
