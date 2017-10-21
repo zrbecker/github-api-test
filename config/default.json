@@ -1,0 +1,6 @@
+{
+  "github-api": {
+    "client-id": "<CLIENT_ID_GOES_HERE>",
+    "client-secret": "<CLIENT_SECRET_GOES_HERE>"
+  }
+}
