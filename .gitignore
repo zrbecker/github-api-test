@@ -1,3 +1,6 @@
+# Ignore config files to protect client secrets
+config/*.json
+
 # Created by https://www.gitignore.io/api/node
 
 ### Node ###
