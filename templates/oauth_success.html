@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Successfully Authenticated</title>
+</head>
+<body>
+  <p>You were successfully authenticated, you may now close this browser
+    window.</p>
+  <script>
+    history.replaceState(
+      null, document.title, window.location.href.split('?')[0])
+  </script>
+</body>
+</html>
