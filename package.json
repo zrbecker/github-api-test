@@ -1,14 +1,18 @@
 {
   "name": "github-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "A nodejs application which is for learning the github api.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zrbecker/github-api-test"
+  },
   "main": "index.js",
   "scripts": {
     "start": "node .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["github"],
+  "author": "Zachary Becker",
   "license": "ISC",
   "dependencies": {
     "config": "^1.27.0",
