@@ -1,8 +1,8 @@
 const config = require('config')
-const github_auth = require('./lib/github_auth')
+const githubAuth = require('./lib/githubAuth')
 const winston = require('winston')
 
-const GithubAuthHandler = github_auth.GithubAuthHandler
+const GithubAuthHandler = githubAuth.GithubAuthHandler
 
 ;(async () => {
   try {
