@@ -6,10 +6,11 @@ const GithubAuthHandler = github_auth.GithubAuthHandler
 
 ;(async () => {
   try {
-    const {client_id, redirect_uri} = config.get('github_api')
-    const authHandler = new GithubAuthHandler(client_id, redirect_uri)
-    const autherizationCode = await authHandler.authorize()
-    winston.debug(`Access token "${autherizationCode}"`)
+    const {clientId, redirectUri} = config.get('githubApi')
+    const authHandler = new GithubAuthHandler(clientId, redirectUri)
+    await authHandler.listen()
+    const authorizationCode = await authHandler.authorize()
+    winston.debug(`Access token "${authorizationCode}"`)
     await authHandler.close()
   } catch (e) {
     winston.error(e)
